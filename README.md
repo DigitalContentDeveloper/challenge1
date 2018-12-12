@@ -74,3 +74,6 @@ If you are successful in obtaining a 1st round interview, please come prepared t
 
 # Stretch Objectives
 The requirements provided are minimal. We encourage any improvements to the functionality that demonstrate developer skill and experience.
+
+# Important Note
+This is purely a skills test as part of an interview process and any code written will be owned by the individual submitting and not used in full or in part by the receiving company in any way, now or in the future.
