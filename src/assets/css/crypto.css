@@ -1,0 +1,203 @@
+/* Atomic styling */
+@font-face {
+    font-family: 'Raleway-Bold';
+    font-weight: 700;
+    src: url('../fonts/Raleway-Bold-subset.woff2') format('woff2'),
+         url('../fonts/Raleway-Bold-subset.woff') format('woff'),
+         url('../fonts/Raleway-Bold-subset.ttf')  format('truetype')
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+    src: url('../fonts/Roboto-Regular-subset.woff2') format('woff2'),
+         url('../fonts/Roboto-Regular-subset.woff') format('woff'),
+         url('../fonts/Roboto-Regular-subset.ttf')  format('truetype')
+}
+
+body {
+    font-family: 'Roboto-Regular', Helvetica, Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Raleway-Bold', serif;
+}
+
+/* variables */
+:root {
+    --primary-color: #eaeae3;
+    --card-bg-color: var(--primary-color);
+    --secondary-color: #E42C07;
+    --link-color: var(--secondary-color);
+    --hover-color: #9c2108;
+}
+
+/* Cards styling */
+/* Progressive enhancement - using float for older browsers */
+.cards, h1 {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.cards {
+    display: flex;
+}
+
+h1 {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.card {
+    width: 90%;
+    margin: 0 auto 40px;
+}
+
+.card:last-child {
+    clear: left;
+}
+
+@media (min-width: 720px) {
+    .card {
+        width: 40%;
+        float: left;
+    }
+    .card:nth-child(2n) {
+        margin-left: 5%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        width: 30%;
+    }
+    .card:not(:first-child) {
+        margin-left: 5%;
+    }
+    .card:last-child {
+        clear: none;
+    }
+}
+
+/* Overridden by grid if supported - just a nicer, more modern way of doing things :) */
+@supports (display:grid) {
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 40px;
+        justify-items: center;
+        align-items: stretch;
+    }
+
+    .card {
+        width: auto;
+        float: none;
+    }
+
+    .cards .card {
+        margin: 0;
+    }
+
+    @media (min-width: 720px) {
+        .cards {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .cards {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+.card {
+    display: flex;
+    max-width: 400px;
+    perspective: 10000px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    background-color: var(--card-bg-color);
+    transition: transform 0.6s ease-in;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.front {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+
+.front > div {
+    position: relative;    
+    background-color: #1b3659;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.card h2 {
+    width: calc(100% - 80px);
+    padding: 20px;
+    margin: 0;
+    color: #fff;
+}
+
+.card img {
+    width: 30px;
+    height: auto;
+    max-height: 30px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.card p {
+    clear: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.5;
+}
+
+.card a {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 8rem;
+    padding: 10px 15px;
+    background-color: var(--link-color);
+    color: white;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in;
+}
+
+.card a:hover, .card a:focus {
+    background-color: var(--hover-color);
+}
+
+/* End cards styling */
+
+/* Utilities */
+.sr-only {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    clip: rect(1px 1px 1px 1px); // IE 6 and 7
+    clip: rect(1px,1px,1px,1px);
+    clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+    -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+    overflow: hidden !important;
+}

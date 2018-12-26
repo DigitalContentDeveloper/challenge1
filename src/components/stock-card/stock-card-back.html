@@ -1,0 +1,42 @@
+<template id="stock-card-template">
+    <style>
+        :host {
+            transform: rotateY(180deg);
+            position: absolute;
+            top: 0;
+            background-color: var(--card-bg-color);
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+        .back {
+            width: 100%;
+            height: 100%;
+        }
+        .back div {
+            position: relative;
+            height: 75%;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-top: 15px;
+            width: 50%;
+            float: right;
+        }
+        a {
+            display: inline-block;
+            color: var(--link-color);
+            padding-left: 15px;
+            margin-top: 15px;
+            max-width: 40%;
+        }
+    </style>
+    <div class="back">
+        <div>
+            <canvas id="stockChart"></canvas>
+        </div>
+        <a href="#" class="btn-flip-card-back" tabindex="-1">View currency info</a><p id="profit"></p>
+    </div>
+</template>
+<script src="../../assets/js/Chart.min.js"></script>
+<script src="./stock-card-back.js"></script>

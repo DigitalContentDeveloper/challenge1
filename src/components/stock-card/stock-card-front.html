@@ -1,0 +1,88 @@
+<template id="stock-card-template">
+    <style>
+        .front {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            position: relative;
+            z-index: 2;
+            transform: rotateY(0deg);
+            backface-visibility: hidden;
+        }
+
+        .front > div {
+            position: relative;    
+            background-color: #1b3659;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+        :host h2 {
+            width: calc(100% - 80px);
+            padding: 20px;
+            margin: 0;
+            color: #fff;
+        }
+
+        :host img {
+            width: 30px;
+            height: auto;
+            max-height: 30px;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+
+        :host p {
+            clear: left;
+            padding-left: 20px;
+            padding-right: 20px;
+            line-height: 1.5;
+        }
+
+        :host a {
+            display: inline-block;
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            max-width: 8rem;
+            padding: 10px 15px;
+            background-color: var(--link-color);
+            color: white;
+            border-radius: 2px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in;
+        }
+
+        :host a:hover, :host a:focus {
+            background-color: var(--hover-color);
+        }
+
+        /* Utilities */
+        .sr-only {
+            position: absolute;
+            height: 1px;
+            width: 1px;
+            clip: rect(1px 1px 1px 1px); // IE 6 and 7
+            clip: rect(1px,1px,1px,1px);
+            clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+            -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+            overflow: hidden !important;
+        }
+    </style>
+    <div class="front">
+        <div>
+            <h2><slot name="heading-text">Bitcoin</slot></h2>
+            <content select="img"></content>
+        </div>
+        <p><slot name="description">Bitcoin is a cryptocurrency, a form of electronic cash. It is a decentralized digital currency without a central bank or single administrator that can be sent from user-to-user on the peer-to-peer bitcoin network without the need for intermediaries.</slot></p>
+        <a href="#">View pricing data</a>
+    </div>
+    <div class="back">
+
+    </div>
+</template>
+
+<script src="./stock-card-front.js"></script>

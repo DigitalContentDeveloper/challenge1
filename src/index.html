@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" media="all" href="./assets/css/crypto.css">
+    <script src="./assets/js/stockCard.js" async></script>
+
+    <!-- include the polyfill for web components. This must precede imports -->
+    <script src="./assets/js/webcomponents-lite.js" async></script>
+    <link rel="import" href="./components/stock-card/stock-card-back.html">
+
+    <title>Cryptic cryptos</title>
+</head>
+<body>
+    <h1>Cryptic crypto pricing</h1>
+    <div class="cards">
+        <div class="card">
+            <!-- <div class="card-flipper"> -->
+                <div class="front">
+                    <div>
+                        <h2>Bitcoin <span class="sr-only">Abbreviation </span>(BTC)</h2>
+                        <img src="./assets/images/Bitcoin Icon.svg" alt="Bitcoin logo">
+                    </div>
+                    <p>Bitcoin is a cryptocurrency, a form of electronic cash. It is a decentralized digital currency without a central bank or single administrator that can be sent from user-to-user on the peer-to-peer bitcoin network without the need for intermediaries.</p>
+                    <a href="#" class="btn-flip-card">View pricing data <span class="sr-only">on flip side of card</span></a>
+                </div>
+                <stock-card-back currency="BTC" chartColour="#F4D35E"></stock-card-back>
+            <!-- </div> -->
+        </div>
+        <div class="card">
+            <!-- <div class="card-flipper"> -->
+                <div class="front">
+                    <div>
+                        <h2>Ethereum <span class="sr-only">Abbreviation </span>(ETH)</h2>
+                        <img src="./assets/images/Ethereum Icon.svg" alt="Ethereum logo">
+                    </div>
+                    <p>Ethereum is an open-source, public, blockchain-based distributed computing platform and operating system featuring smart contract functionality. It supports a modified version of Nakamoto consensus via transaction-based state transitions.</p>
+                    <a href="#" class="btn-flip-card">View pricing data <span class="sr-only">on flip side of card</span></a>
+                </div>
+                <stock-card-back currency="ETH" chartColour="#EE964B"></stock-card-back>
+            <!-- </div> -->
+        </div>
+        <div class="card">
+            <!-- <div class="card-flipper"> -->
+                <div class="front">
+                    <div>
+                        <h2>Litecoin <span class="sr-only">Abbreviation </span>(LTC)</h2>
+                        <img src="./assets/images/Litecoin Icon.svg" alt="Litecoin logo">
+                    </div>
+                    <p>Litecoin is a peer-to-peer cryptocurrency and open source software project released under the MIT/X11 license. Creation and transfer of coins is based on an open source cryptographic protocol and is not managed by any central authority.</p>
+                    <a href="#" class="btn-flip-card">View pricing data <span class="sr-only">on flip side of card</span></a>
+                </div>
+                <stock-card-back currency="LTC" chartColour="#F95738"></stock-card-back>
+            <!-- </div> -->
+        </div>
+    </div>
+</body>
+</html>
