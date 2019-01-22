@@ -48,12 +48,12 @@ A sample data set below shows prices of BTC, ETH and LTC crypto currencies at va
 * For each currency type, find out the best possible profit that would have been made from buying a currency at a given price and selling it later on the same day. 
 * Display the calculated profit in the page or view (see front-end). Consider the following format as an example: 
 
-|BTC		|		|ETH		|		|LTC		|		|
-|---		|---	|---		|---	|---		|---	|
-|Buy		|Sell	|Buy		|Sell	|Buy		|Sell	|
-|$34.98		|$37.01	|$1.45		|$2.15	|$14.32		|$15.03	|
-|09:15AM	|12:30PM|09:00AM	|05:00PM|09:30AM	|12:45PM|
-|Profit		|$2.03	|Profit		|$0.70	|Profit		|$0.71	|
+|BTC     |        |ETH     |        |LTC     |        |
+|---     |---     |---     |---     |---     |---     |
+|Buy     |Sell    |Buy     |Sell    |Buy     |Sell    |
+|$34.98  |$37.01  |$1.45   |$2.15   |$14.32  |$15.03  |
+|09:15AM |12:30PM |09:00AM |05:00PM |09:30AM |12:45PM |
+|Profit  |$2.03   |Profit  |$0.70   |Profit  |$0.71   |
 
 * Read the data from a database or build an API. Use the following details as suggestions.
 	* If you are working with a relational database, you can assume it to have similar schema as the provided [data CSV](/data/20180507.csv).
@@ -67,8 +67,8 @@ A sample data set below shows prices of BTC, ETH and LTC crypto currencies at va
 # General comments
 Ensure the prevalent best coding practices are followed and write clean code.
 
-Branch or fork this challenge on GitHub and follow Git best practices during development. 
-Provide the URL of the final branch or pull request, making sure the project available for review and is not in a private repository.
+Fork this challenge on GitHub and follow Git best practices during development. 
+Provide the URL of the final branch or pull request, making sure the project is available for review and is not in a private repository.
 
 If you are successful in obtaining a 1st round interview, please come prepared to discuss your solution/implementation as this will form a part of the interview process.
 
