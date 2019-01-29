@@ -67,13 +67,15 @@ A sample data set below shows prices of BTC, ETH and LTC crypto currencies at va
 # General comments
 Ensure the prevalent best coding practices are followed and write clean code.
 
-Fork this challenge on GitHub and follow Git best practices during development. 
-Provide the URL of the final branch or pull request, making sure the project is available for review and is not in a private repository.
+The requirements provided are minimal. We encourage any improvements to the functionality that demonstrate developer skill and experience.
+
+# Submitting your solution
+Fork this challenge on GitHub and follow Git best practices during development.
+Prepare your code in a branch as if preparing it for a pull request and code review but don't raise a pull request to merge back into the base fork.
+
+Provide the URL of your branch making sure the code is available for review and is not in a private repository.
 
 If you are successful in obtaining a 1st round interview, please come prepared to discuss your solution/implementation as this will form a part of the interview process.
-
-# Stretch Objectives
-The requirements provided are minimal. We encourage any improvements to the functionality that demonstrate developer skill and experience.
 
 # Important Note
 This is purely a skills test as part of an interview process and any code written will be owned by the individual submitting and not used in full or in part by the receiving company in any way, now or in the future.
