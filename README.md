@@ -8,7 +8,7 @@ The questions are quite open, and you are encouraged to extend them to best demo
 
 Data and assets required for the rpoblem can be found in the [/data](/data) and [/assets](/assets) folders of this repository.
 
-The choice of technologies used for this challenge is up the individual, but consider the following preferred solutions:
+The choice of technologies used for this challenge is up the individual, but consider the following list of technologies preferred:
 
 * AWS
 * Java
@@ -24,9 +24,9 @@ The choice of technologies used for this challenge is up the individual, but con
 # Problem Statement
 You are working on a project that analyses data from various crypto currencies and offers it to a customer.
 
-The requirement is to process an historical price list of currencies provided by a currency exchange and clearly present this information to a customer.
+The requirement is to process an historical price list of currencies provided by a currency exchange API and clearly present this information to a customer.
 
-A sample data set below shows prices of BTC, ETH and LTC crypto currencies at various times on 7th May.
+A sample data set located in the [/data](/data) folder shows prices of BTC, ETH and LTC crypto currencies at various times on 7th May.
 
 # Front-end
 ## Description
@@ -78,4 +78,4 @@ Provide the URL of your branch making sure the code is available for review and 
 If you are successful in obtaining a 1st round interview, please come prepared to discuss your solution/implementation as this will form a part of the interview process.
 
 # Important Note
-This is purely a skills test as part of an interview process and any code written will be owned by the individual submitting and not used in full or in part by the receiving company in any way, now or in the future.
+This is purely a skills test as part of an interview process. Any code written will be owned by the submitting individual and not used in full or in part by the receiving company in any way, now or in the future.
