@@ -6,7 +6,7 @@ For example, if you are more comfortable with backend, databases, APIs, etc. you
 
 The questions are quite open, and you are encouraged to extend them to best demonstrate your skills and knowledge.
 
-Data and assets required for the rpoblem can be found in the [/data](/data) and [/assets](/assets) folders of this repository.
+Data and assets required for the problem can be found in the [/data](/data) and [/assets](/assets) folders of this repository.
 
 The choice of technologies used for this challenge is up the individual, but consider the following list of technologies preferred:
 
